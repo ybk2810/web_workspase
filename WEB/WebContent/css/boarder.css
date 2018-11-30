@@ -1,0 +1,32 @@
+@charset "UTF-8";
+*{
+margin :0;
+padding: 0;
+}
+
+table{
+	margin: auto;
+	width: 800px;
+	text-align: center;
+}
+#no{
+width:20%
+}
+#writer{
+width:20%
+}
+#title{
+width:40%
+}
+#hits{
+width:10%
+}
+#regdate{
+width:20%
+}
+
+#container{
+	width: 900px;
+	
+}
+

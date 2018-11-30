@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- xml의 성격상 어떤 단체 또는 개인이라도 자신의 고유한 용어로 xml문서를 작성할 수 있다.
+따라서 중복된 요소가 생길 수도 있다.
+중복 방지를 위해서 우리회사에서 만든 <name>
+다른 회사 만든 <name>
+
+식별자: 웹사이트 주소를 사용
+namespace: 네임스페이스를 두어서 구분
+
+<접두사: 엘리먼트명 xmls:접두사="http:/~~~" 
+
+-->
+
+<com:회사 
+xmlns:com="http://www.acorn.com/companyML" 
+xmlns:emp="http://www.acorn.com/employeeML">
+	<com:name>acorn</com:name>
+	<com:loc>종각</com:loc>
+	<emp:name>복</emp:name>
+</com:회사>
+
+
+
+
+
+
+

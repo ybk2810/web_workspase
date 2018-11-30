@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 엘리먼드(자식엘리먼트)+
+	+: 1개 이상 존재가능-->
+
+<!ELEMENT department (dept)+>
+<!ELEMENT dept (deptno, dname, loc)>
+<!ELEMENT deptno (#PCDATA)>
+<!ELEMENT dname (#PCDATA)>
+<!ELEMENT loc (#PCDATA)>

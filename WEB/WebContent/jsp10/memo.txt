@@ -1,0 +1,59 @@
+XML eXtensible Markup Language
+HTML 단점
+1. 사용할 수 있는 태그가 제한적
+2. 정보표현에만 기능이 집중
+3. 구조화된 정보를 표현/검색, 문서 유효성 검정x
+
+XML 구조
+1. xml 선언부
+<?xml version="1.0 encoding="UTF-8"?>
+
+2. 문서 구조(dtd)
+<!DOCTYPE 루트엘리먼트명
+	SYSTEM "dtd파일의 경로와 파일명">
+	
+3. xml 태그
+
+	1. 시작태그 다음에는 반드시 종료태그가 있어야 한다.
+		<시작태그>요소내용<종료태그>
+	2. 모든 엘리먼트명은 대소문자를 구분한다.
+		<Person></person>xxxxxxx
+	3. 엘리먼트와 멕스트 데이터를 함께 나타낼 수 있다.
+		<name>hong</name>
+	4. 엘리먼트 내용이 없으면 빈 요소로 둘 수 있다.
+		<age></age>
+	5. 태그를 겹쳐서 쓰는 것을 허용하지 xxx
+		<name><age></name></age> xxxx
+		<name><age></age></name>
+	6. 최장위(root)엘리먼트는 1개만
+		<?xml version="1.0 encoding="UTF-8"?>
+		<person>
+			<name>hong</name>
+			<age>20</age>
+		</person>
+		<person>
+			<name>lee</name>
+			<age>22</age>
+		</person>
+		-->xxxxxxxx
+		<?xml version="1.0 encoding="UTF-8"?>
+		<human>
+			<person>
+				<name>hong</name>
+				<age>20</age>
+			</person>
+			<person>
+				<name>lee</name>
+				<age>22</age>
+			</person>
+		</human>
+		-->ooooooo
+	7. 엘리먼트명은 xml의 이름지정규칙을 따라야 한다.
+		이름지정규칙
+		1. 문자열은 xml로 시작할 수 없다.
+		2. 엘리먼트명은 반드시 문자 혹은 _로 시작해야 한다.
+		3. 엘리먼트명은 중간에 공백을 사용할 수 없다.
+			<big small></big small> xxx
+			단 공백으로 끝날 수는 있다.
+			<big_small ></big_small >
+		4. 예약어 xxxxxxx

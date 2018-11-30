@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	table,td{
+		border: 1px solid white;
+		border-collapse: collapse;
+	}
+	table{
+		width: 700px;
+	}
+	th{
+		text-align=left;
+	}
+	td{
+		text-align=center;
+		margin: 0 auto;
+	}
+	
+</style>
+</head>
+<body>
+	<form action="regOK.do" method ="get">
+	<table>
+		<tr>
+			<th></th>
+			<td colspan="3">
+				<h1>가입신청서</h1>
+			</td>
+		</tr>
+		<tr>
+			<th>ID: </th>
+			<td><input type="text" name="id" id=""  />   </td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>이름: </th>
+			<td><input type="text" name="name" id=""  />   </td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>주민등록번호: </th>
+			<td><input type="text" name="ssn1" id=""  /> - </td>
+			<td><input type="text" name="ssn2" id=""  />   </td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>비밀번호: </th>
+			<td><input type="text" name="pw" id=""  />   </td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>전화번호: </th>
+			<td><input type="text" name="front"  /> - </td>
+			<td><input type="text" name="middle"  /> - </td>
+			<td><input type="text" name="last"  /></td>
+		</tr>
+		<tr>
+			<th>주소: </th>
+			<td><input type="text" name="addrs" id=""  />   </td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>E-mail: </th>
+			<td colspan="3">
+				<input type="text" name="email1"   /> @
+				<input type="text" name="email2"   />
+				<select name="domain" id="">
+					<option value="">직접입력</option>
+					<option value="naver.com">naver.com</option>
+					<option value="google.com">google.com</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th>성별: </th>
+			<td colspan="3">
+				<input type="radio" name="gender" value="남자" />남자
+				<input type="radio" name="gender" value="여자" />여자
+			</td>
+		</tr>
+		<tr>
+			<th>취미: </th>
+			<td colspan="3">
+				<input type="checkbox" name="hobby" id="" value="음악감상"/>음악감상
+				<input type="checkbox" name="hobby" id="" value="독서" />독서
+				<input type="checkbox" name="hobby" id="" value="운동" />운동
+			</td>
+		</tr>
+		<tr>
+			<th></th>
+			<td colspan="3">
+				<input type="submit" id ="btn1"  value="가입합니다" class="btn"  />
+				<input type="button" id ="btn2" value="취소합니다" class="btn"  />
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

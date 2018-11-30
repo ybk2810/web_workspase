@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE 이달의베스트셀러 [
+	<!ELEMENT 사원 (명함)+>
+	<!ELEMENT 명함 (회사명, 부서, 성명, 주소, 전화+, 팩스?)>
+	<!ELEMENT 주소 (((시, 구) | (도,시)), 동)>
+	<!ELEMENT 회사명 (#PCDATA)>
+	<!ELEMENT 부서 (#PCDATA)>
+	<!ELEMENT 성명 (#PCDATA)>
+	<!ELEMENT 도 (#PCDATA)>
+	<!ELEMENT 시 (#PCDATA)>
+	<!ELEMENT 구 (#PCDATA)>
+	<!ELEMENT 동 (#PCDATA)>
+	<!ELEMENT 전화 (#PCDATA)>
+	<!ELEMENT 팩스 (#PCDATA)>
+	<!ATTLIST 성명 사번 CDATA #REQUIRED>
+]>
+<!-- DTD
+	+: 1개 이상
+	*: 0개 이상
+	?: 0 or 1개
+	
+	A|B: A또는 B
+	(): 엘리먼트를 그룸으로 선언해서 사용
+ -->
+<사원>
+	<명함>
+	<!--  회사명,부서,성명,주소,전화+,팩스? -->
+		<회사명>acorn</회사명>
+		<부서>개발</부서>
+		<성명 사번="9999">톰캣</성명>
+		<주소>
+			<시>서울</시>
+			<구>종로</구>
+			<동>돈암</동>
+		</주소>
+		<전화>02-0000-0000</전화>
+		<팩스>02-0000-0000</팩스>
+	</명함>
+
+</사원>
