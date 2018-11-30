@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace=" ">
+	<select id="empAll" resultType="vo.EmpVO">
+		SELECT * FROM emp
+	</select>
+	
+	<select id="empOne" parameterType="int" resultType="vo.EmpVO">
+ 		SELECT empno, ename, job, mgr, hiredate, sal, comm, deptno FROM emp WHERE empno = #{empno}
+ 	</select>
+ 	
+ 	<select id="empOneByName" parameterType="String" resultType="vo.EmpVO">
+ 		SELECT empno, ename, job, mgr, hiredate, sal, comm, deptno FROM emp WHERE ename = #{ename}
+ 	</select>
+ 	
+ 	<insert id="empInsertOne" parameterType="vo.EmpVO">
+ 		INSERT INTO emp VALUES ( EMP_EMPNO_SEQ.NEXTVAL, #{ename}, #{job}, #{mgr}, #{hiredate}, #{sal}, #{comm}, #{deptno} )
+ 	</insert>
+ 	
+ 	<delete id="empDeleteOne" parameterType="int">
+ 		DELETE emp WHERE empno = #{empno}
+ 	</delete>
+ 	
+ 	<update id="empUpdateOne" parameterType="vo.EmpVO">
+ 		UPDATE emp SET ename = #{ename}, job = #{job}, mgr = #{mgr}, hiredate = #{hiredate}, sal = #{sal}, comm = #{comm}, deptno = #{deptno} where empno = #{empno}
+ 	</update>
+</mapper>

@@ -1,0 +1,11 @@
+
+	<!ELEMENT 이달의베스트셀러 (베스트셀러)+>
+	<!ELEMENT 베스트셀러 (제목, 저자, 출판사, 초판일)>
+	<!ELEMENT 제목 (#PCDATA)>
+	<!ELEMENT 저자 (#PCDATA)>
+	<!ELEMENT 출판사 (#PCDATA)>
+	<!ELEMENT 초판일 (#PCDATA)>
+	
+	<!ATTLIST 베스트셀러 isbn ID #REQUIRED>
+	<!ATTLIST 베스트셀러 code (a|b|c) "a">
+	<!ATTLIST 베스트셀러 단위 (권|보따리|뭉치) "권">

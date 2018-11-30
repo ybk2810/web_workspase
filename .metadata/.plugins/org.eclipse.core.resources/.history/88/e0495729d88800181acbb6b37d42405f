@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LoginOK.html</title>
+<style type="text/css">
+	table,td{
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	table{
+		width: 300px;
+		margin: auto;
+		text-align=center;
+	}
+</style>
+</head>
+<body>
+
+	<form action="Login" method ="get">
+		<table>
+			<tr>
+				<th>ID</th>
+				<td><input type="text" name="id" id=""  /></td>
+			</tr>
+			<tr>
+				<th>PW</th>
+				<td><input type="text" name="pw" id=""  /></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="로그인"  />
+					<input type="button" value="회원가입"  />
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

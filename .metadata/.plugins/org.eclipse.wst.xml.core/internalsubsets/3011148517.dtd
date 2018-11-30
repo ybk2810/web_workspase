@@ -1,0 +1,9 @@
+
+	<!ELEMENT 사원들 (사원)+>
+	<!ELEMENT 사원 (사번, 이름, 군필?, 키?, 나이, 취미*)>
+	<!ELEMENT 사번 (#PCDATA)>
+	<!ELEMENT 이름 (#PCDATA)>
+	<!ELEMENT 군필 (#PCDATA)>
+	<!ELEMENT 키 (#PCDATA)>
+	<!ELEMENT 나이 (#PCDATA)>
+	<!ELEMENT 취미 (#PCDATA)>

@@ -1,0 +1,9 @@
+
+	<!ELEMENT 학생들 (학생)+>
+	<!ELEMENT 학생 (학번, 이름+, 나이?)>
+	<!ELEMENT 학번 (#PCDATA)>
+	<!ELEMENT 이름 (#PCDATA)>
+	<!ELEMENT 나이 (#PCDATA)>
+	
+	<!ATTLIST 학생 학년 (1|2|3|4) "1">
+	<!ATTLIST 학번 학과 (컴공|작곡|수학|영문) "컴공">

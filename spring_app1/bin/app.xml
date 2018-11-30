@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="h1" class="spring_app1.HelloKr"></bean>
+	<bean id="h2" class="spring_app1.HelloCn"></bean>
+	<bean id="h3" class="spring_app1.HelloJp"></bean>
+	<!-- Hello h = new Hello();과 같은 코드 -->
+</beans>

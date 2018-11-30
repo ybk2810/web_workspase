@@ -1,0 +1,13 @@
+spring 특징
+
+Enterprise급 application 개발을 위한 경량 Framework
+
+1. Rod Johnson
+2. 애플리케이션 개발의 복잡성을 줄여주기 위한 목적
+3. EJB 사용으로 수행되었던 모든 기능을 POJO를 사용해서 가능하게 함.
+4. Ioc(Inversion of Control) <-- 제어의 역전
+   DI(Dependency Injection) <-- 의존성 주입
+5. AOP(Aspect Oriented Programming)
+6. POJO(Plain Old Java Object)
+7. 경량 컨테이너
+8. 모듈화 되어 있어 필요한 모듈만 추가 가능

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+  
+<configuration>
+	<properties resource="config/db.properties"></properties>
+	<typeAliases>
+		<typeAlias type="kr.co.acorn.web.vo.DeptVO" alias="dvo" />
+		<typeAlias type="kr.co.acorn.web.vo.EmpVO" alias="evo" />
+	</typeAliases>
+	<environments default="dev">
+		<environment id="dev">
+			<transactionManager type="JDBC"></transactionManager>
+			<dataSource type="POOLED">
+				<property name="driver" value="${driver1}"/>
+				<property name="url" value="${url2}"/>
+				<property name="username" value="${username3}"/>
+				<property name="password" value="${password4}"/>
+			</dataSource>
+		</environment>
+	</environments>
+	
+	<mappers>
+		<mapper resource="mapper/dept.xml" />
+		<mapper resource="mapper/emp.xml" />
+	</mappers>
+</configuration>

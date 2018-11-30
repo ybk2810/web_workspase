@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="kr.co.acorn.dept">
+	<select id="selectAll" resultType="dvo" >
+		SELECT * FROM dept
+	</select>
+	
+	<select id="selectByNamePattern" parameterType="String" resultType="dvo">
+		SELECT deptno, dname, loc FROM dept WHERE dname like '%'||#{dname}||'%'
+	</select>
+	
+	<insert id="insertOne" parameterType="dvo" >
+		INSERT INTO dept
+		VALUES (DEPT_DEPTNO_SEQ.NEXTVAL, #{dname}, #{loc})
+	</insert>
+	
+	<select id="selectByName" parameterType="String" resultType="dvo">
+		SELECT deptno, dname, loc FROM dept
+		WHERE dname = #{dname}
+	</select>
+	
+	<select id="selectByNo" parameterType="int" resultType="dvo" >
+		SELECT deptno, dname, loc FROM dept
+		where deptno = #{deptno}
+	</select>
+	
+	<delete id="deptDrop" parameterType="int">
+		DELETE dept
+		WHERE deptno = #{deptno}
+	</delete>
+	
+</mapper>

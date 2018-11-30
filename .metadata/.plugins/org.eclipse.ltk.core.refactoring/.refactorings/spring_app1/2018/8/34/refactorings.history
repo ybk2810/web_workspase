@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;spring_app1.Hellokr&apos; to &apos;HelloKr&apos;&#x0D;&#x0A;- Original project: &apos;spring_app1&apos;&#x0D;&#x0A;- Original element: &apos;spring_app1.Hellokr&apos;&#x0D;&#x0A;- Renamed element: &apos;spring_app1.HelloKr&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Hellokr&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;spring_app1{Hellokr.java[Hellokr" matchStrategy="1" name="HelloKr" qualified="false" references="true" similarDeclarations="false" stamp="1534989863003" textual="false" version="1.0"/>
+</session>

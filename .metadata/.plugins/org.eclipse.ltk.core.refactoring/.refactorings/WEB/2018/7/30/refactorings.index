@@ -1,0 +1,13 @@
+1532307305066	Move 'test.jsp' to 'jsp3'
+1532326145999	Rename type 'board'
+1532326552533	Rename type 'boardVO'
+1532333463680	Rename resource 'WriteOK.jsp'
+1532334819327	Rename resource 'WriteOk.jsp'
+1532335937540	Rename resource 'writeOk.jsp'
+1532335946525	Rename resource 'writeOk1.jsp'
+1532394009941	Delete element
+1532394044425	Move 3 resources to 'board'
+1532397770622	Move 'css' to 'WebContent'
+1532652254758	Move 'jsp6' to 'WebContent'
+1532659910251	Rename resource 'data.jsp'
+1532660564527	Rename compilation unit 'deptVO.java'

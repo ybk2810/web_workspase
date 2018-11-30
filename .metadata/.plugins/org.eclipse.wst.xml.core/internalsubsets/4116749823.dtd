@@ -1,0 +1,13 @@
+
+	<!ELEMENT 자동차 (기본,모델,옵션)>
+	<!ELEMENT 기본 (회사명,차종,가격)>
+	<!ELEMENT 모델 (색상,배기량)>
+	<!ELEMENT 옵션 (CD,에어백)>
+	<!-- Parsed Character Data -->
+	<!ELEMENT 회사명 (#PCDATA)>
+	<!ELEMENT 차종 (#PCDATA)>
+	<!ELEMENT 가격 (#PCDATA)>
+	<!ELEMENT 색상 (#PCDATA)>
+	<!ELEMENT 배기량 (#PCDATA)>
+	<!ELEMENT CD (#PCDATA)>
+	<!ELEMENT 에어백 (#PCDATA)>
